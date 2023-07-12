@@ -1,11 +1,11 @@
 # Getting Started
 A job runner that can execute jobs
 
-### This is consist of 2 project
+#### This is consist of 2 project
 * Job Remote - Run remote service that will perform jobs and update the status in the DB
 * Job Runner - A multithreaded application that triggers http request in the Job remote to start and get status of the jobs
 
-Job Remote is a spring boot back end application. Used MySQL as DB
+### Job Remote is a spring boot back end application. Used MySQL as DB
 
 To run the application
 * install MySQL in the system
@@ -22,7 +22,7 @@ To run the application
    mvn spring-boot:run
 * The application will start running on http://localhost:8080.
 
-Job Runner is a Java application that will do following 
+### Job Runner is a Java application that will do following 
 * Send a http request to trigger an action on a remote service , assume the action will take several minutes to finish
 * send a http request to check the status of the job
 * print the status of the job
